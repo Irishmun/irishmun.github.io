@@ -1,0 +1,60 @@
+Uri: https://www.jameskii.com/
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\index.htm
+Content Type: text/html
+
+Uri: https://www.jameskii.com/style.css
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\style.css
+Content Type: text/css
+
+Uri: https://www.jameskii.com/jquery.min.js
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\jquery.min.js
+Content Type: application/javascript
+
+Uri: https://www.jameskii.com/script.js
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\script.js
+Content Type: application/javascript
+
+Uri: https://www.jameskii.com/img/COMPUTER.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\COMPUTER.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/Shortcut.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\Shortcut.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/YT.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\YT.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/TWITCH.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\TWITCH.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/STAR.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\STAR.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/TWITTER.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\TWITTER.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/IG.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\IG.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/BREADSKATE.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\BREADSKATE.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/img/FOLDER.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\FOLDER.png
+Content Type: image/png
+
+Uri: https://www.jameskii.com/snd/Click.mp3
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\snd\Click.mp3
+Content Type: audio/mpeg
+
+Uri: https://www.jameskii.com/img/bliss.png
+File Name: C:\Users\Steef\Documents\html\jameskii\webcopy  result\www.jameskii.com\img\bliss.png
+Content Type: image/png
+
