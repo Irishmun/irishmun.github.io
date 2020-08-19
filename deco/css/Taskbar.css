@@ -1,0 +1,48 @@
+.Taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 28px;
+}
+
+.Taskbar-background {
+    background-image: url(../img/icons/taskbar.png);
+    background-repeat: repeat;
+    background-color: #D4D0C8;
+    margin-left: -8px;
+}
+
+.StartButton {
+    background-image: url(../img/icons/StartButtonClassic.png);
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 55px;
+    margin: 4px 0px 4px 2px;
+    border: none;
+    outline: none;
+}
+
+.StartButton:active {
+    background-position-x: 100%;
+}
+
+.Clock {
+    background-image: url(../img/icons/ClockClassic.png);
+    background-repeat: no-repeat;
+    height: 22px;
+    width: 71px;
+    margin: 4px 2px;
+    outline: none;
+    display: block;
+    float: right;
+}
+
+.TimeText {
+    text-align: center;
+    line-height: 22px;
+    font-size: 12px;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-smooth: none;
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: none;
+}
