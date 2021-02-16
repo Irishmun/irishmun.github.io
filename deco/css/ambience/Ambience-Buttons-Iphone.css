@@ -1,5 +1,4 @@
 .PlayPause {
-    background-image: url(../../img/icons/Ambience/MoonPlayPause.png);
     background-repeat: no-repeat;
     background-color: transparent;
     image-rendering: pixelated;
@@ -15,44 +14,44 @@
 }
 
 .PP-Play {
-    background-position-x: 0px;
+    background-image: url(../../img/icons/Ambience/MoonPlay.png);
     left: 48px;
 }
 
 .PP-Play:active {
-    background-position-x: -16px;
+    background-image: url(../../img/icons/Ambience/MoonPlaying.png);
 }
 
 .PP-Playing {
-    background-position-x: -16px;
+    background-image: url(../../img/icons/Ambience/MoonPlaying.png);
     left: 48px;
 }
 
 .PP-pause {
-    background-position-x: -32px;
+    background-image: url(../../img/icons/Ambience/MoonPause.png);
     left: 42px;
 }
 
 .PP-pause:active {
-    background-position-x: -48px;
+    background-image: url(../../img/icons/Ambience/MoonPaused.png);
 }
 
 .PP-paused {
-    background-position-x: -48px;
+    background-image: url(../../img/icons/Ambience/MoonPaused.png);
     left: 42px;
 }
 
 .PP-stop {
-    background-position-x: -64px;
+    background-image: url(../../img/icons/Ambience/MoonStop.png);
     left: 42px;
 }
 
 .PP-stop:active {
-    background-position-x: -80px;
+    background-image: url(../../img/icons/Ambience/MoonStopped.png);
     left: 42px;
 }
 
 .PP-stopped {
-    background-position-x: -80px;
+    background-image: url(../../img/icons/Ambience/MoonStopped.png);
     left: 42px;
 }

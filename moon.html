@@ -6,14 +6,16 @@
     <link rel="stylesheet" href="./deco/css/ambience/Ambience-desktop.css" id="ambientScale">
     <link rel="stylesheet" href="./deco/css/ambience/Ambience-Buttons.css" id="ambientButton" </head>
     <script>
-        let isDesktop = true;
-        let isIphone = false;
-        let OSName = "";
-        if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
-        if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
-        if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
-        if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
-        alert(OSName);
+        if (/iPhone|iPod|iPad/i.test(navigator.userAgent)) {
+            document.getElementById("ambientButton").setAttribute('href', './deco/css/ambience/Ambience-Buttons-Iphone.css');
+        } else {
+            document.getElementById("ambientButton").setAttribute('href', './deco/css/ambience/Ambience-Buttons.css');
+        }
+        if (/Android|webOS|iPhone|iPod|BlackBerry|Windows Phone/i.test(navigator.userAgent)) {
+            document.getElementById("ambientScale").setAttribute('href', './deco/css/ambience/Ambience-Mobile.css')
+        } else {
+            document.getElementById("ambientScale").setAttribute('href', './deco/css/ambience/Ambience-desktop.css')
+        }
     </script>
 
     <body>
