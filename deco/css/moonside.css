@@ -1,0 +1,81 @@
+body {
+    background-image: url(../img/background/moonsidePropper2x.png);
+    image-rendering: pixelated;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+    background-color: black;
+    color: white;
+}
+
+body>* {
+    image-rendering: auto;
+}
+
+.PlayPause {
+    background-image: url(../img/icons/MoonPlayPause.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    image-rendering: pixelated;
+    height: 16px;
+    width: 16px;
+    margin: 4px 0px 4px 2px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 2px;
+}
+
+.PP-Play {
+    background-position-x: 0px;
+    left: 48px;
+}
+
+.PP-Play:active {
+    background-position-x: -16px;
+}
+
+.PP-Playing {
+    background-position-x: -16px;
+    left: 48px;
+}
+
+.PP-pause {
+    background-position-x: -32px;
+    left: 42px;
+}
+
+.PP-pause:active {
+    background-position-x: -48px;
+}
+
+.PP-paused {
+    background-position-x: -48px;
+    left: 42px;
+}
+
+.PP-stop {
+    background-position-x: -64px;
+    left: 42px;
+}
+
+.PP-stop:active {
+    background-position-x: -80px;
+    left: 42px;
+}
+
+.PP-stopped {
+    background-position-x: -80px;
+    left: 42px;
+}
+
+.Ambience {
+    background-image: url(../img/icons/MusicPlayer.png);
+    height: 32px;
+    width: 92px;
+    image-rendering: pixelated;
+    position: fixed;
+    bottom: 26px;
+    left: 51px;
+    transform: scale(2);
+}

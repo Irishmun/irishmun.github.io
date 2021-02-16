@@ -10,7 +10,7 @@
     image-rendering: pixelated;
     min-width: 50px;
     max-width: 75px;
-    padding: 11px;
+    height: 75px;
     display: inline-block;
     text-align: center;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
@@ -18,13 +18,27 @@
     color: white;
     font-smooth: none;
     -webkit-font-smoothing: none;
+    vertical-align: bottom;
     -moz-osx-font-smoothing: none;
+    text-decoration: none;
+    margin: 5px;
 }
 
 img.d-icon {
-    min-width: 16px;
-    max-width: 32px;
-    padding: 6px;
+    min-height: 32px;
+    max-height: 32px;
+    min-width: 32px;
+    max-height: 32px;
+    aspect-ratio: 32 / 32;
+}
+
+.d-icon>.title {
+    max-height: 26px;
+    margin-top: 5px;
+    line-height: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
 }
 
 .icon-row {

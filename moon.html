@@ -1,9 +1,50 @@
 <html>
 
-<head></head>
+<head>
+    <title>Moonside</title>
+    <link rel="stylesheet" href="./deco/css/moonside.css">
+</head>
 
 <body>
-    <img src="./deco/img/background/moonsidePropper.png">
+
+
+
+    <div class="Ambience">
+        <button class="playPause PP-Play" id="PlayButton" onclick="playMusic()"></button>
+        <button class="playPause PP-Paused" id="PauseButton" onclick="pauseMusic()"></button>
+        <audio id="moon" preload="auto" loop>
+            <source src="./deco/music/MoonsideSwing2.mp3">
+        </audio>
+        <script>
+            let player = document.getElementById("moon");
+            let playButton = document.getElementById("PlayButton");
+            let pauseButton = document.getElementById("PauseButton");
+
+            function playMusic() {
+                player.play();
+                if (playButton != null) {
+                    if (pauseButton != null) {
+                        pauseButton.classList.remove("PP-Paused");
+                        pauseButton.classList.add("PP-Pause");
+                    }
+                    playButton.classList.remove("PP-Play");
+                    playButton.classList.add("PP-Playing");
+                }
+            }
+
+            function pauseMusic() {
+                player.pause();
+                if (pauseButton != null) {
+                    if (playButton != null) {
+                        playButton.classList.remove("PP-Playing");
+                        playButton.classList.add("PP-Play");
+                    }
+                    pauseButton.classList.remove("PP-Pause");
+                    pauseButton.classList.add("PP-Paused");
+                }
+            }
+        </script>
+    </div>
 </body>
 
 </html>
