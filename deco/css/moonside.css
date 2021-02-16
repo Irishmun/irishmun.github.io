@@ -17,8 +17,10 @@ body>* {
     background-repeat: no-repeat;
     background-color: transparent;
     image-rendering: pixelated;
-    height: 16px;
-    width: 16px;
+    max-height: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    min-width: 16px;
     margin: 4px 0px 4px 2px;
     border: none;
     outline: none;
@@ -78,4 +80,8 @@ body>* {
     bottom: 26px;
     left: 51px;
     transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
 }
