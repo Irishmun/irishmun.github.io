@@ -18,11 +18,4 @@ body>* {
     width: 92px;
     image-rendering: pixelated;
     position: fixed;
-    bottom: 26px;
-    left: 51px;
-    transform: scale(2);
-    -moz-transform: scale(2);
-    -ms-transform: scale(2);
-    -webkit-transform: scale(2);
-    -o-transform: scale(2);
 }

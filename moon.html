@@ -3,51 +3,57 @@
 <head>
     <title>Moonside</title>
     <link rel="stylesheet" href="./deco/css/moonside.css">
-    <link rel="stylesheet" href="./deco/css/Ambience-desktop.css" id="ambient">
+    <link rel="stylesheet" href="./deco/css/ambience/Ambience-desktop.css" id="ambientScale">
+    <link rel="stylesheet" href="./deco/css/ambience/Ambience-Buttons.css" id="ambientButton" </head>
+    <script>
+        let isDesktop = true;
+        let isIphone = false;
+        if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+        if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+        if (navigator.appVersion.indexOf("X11") != -1) OSName = "UNIX";
+        if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
+    </script>
 
-</head>
-
-<body>
+    <body>
 
 
 
-    <div class="Ambience">
-        <button class="playPause PP-Play" id="PlayButton" onclick="playMusic()"></button>
-        <button class="playPause PP-Paused" id="PauseButton" onclick="pauseMusic()"></button>
-        <audio id="moon" preload="auto" loop>
+        <div class="Ambience Ambience-scale">
+            <button class="playPause PP-Play" id="PlayButton" onclick="playMusic()"></button>
+            <button class="playPause PP-Paused" id="PauseButton" onclick="pauseMusic()"></button>
+            <audio id="moon" preload="auto" loop>
             <source src="./deco/music/MoonsideSwing2.mp3">
         </audio>
-        <script>
-            alert(navigator.userAgent);
-            let player = document.getElementById("moon");
-            let playButton = document.getElementById("PlayButton");
-            let pauseButton = document.getElementById("PauseButton");
+            <script>
+                let player = document.getElementById("moon");
+                let playButton = document.getElementById("PlayButton");
+                let pauseButton = document.getElementById("PauseButton");
 
-            function playMusic() {
-                player.play();
-                if (playButton != null) {
-                    if (pauseButton != null) {
-                        pauseButton.classList.remove("PP-Paused");
-                        pauseButton.classList.add("PP-Pause");
-                    }
-                    playButton.classList.remove("PP-Play");
-                    playButton.classList.add("PP-Playing");
-                }
-            }
-
-            function pauseMusic() {
-                player.pause();
-                if (pauseButton != null) {
+                function playMusic() {
+                    player.play();
                     if (playButton != null) {
-                        playButton.classList.remove("PP-Playing");
-                        playButton.classList.add("PP-Play");
+                        if (pauseButton != null) {
+                            pauseButton.classList.remove("PP-Paused");
+                            pauseButton.classList.add("PP-Pause");
+                        }
+                        playButton.classList.remove("PP-Play");
+                        playButton.classList.add("PP-Playing");
                     }
-                    pauseButton.classList.remove("PP-Pause");
-                    pauseButton.classList.add("PP-Paused");
                 }
-            }
-        </script>
-    </div>
-</body>
+
+                function pauseMusic() {
+                    player.pause();
+                    if (pauseButton != null) {
+                        if (playButton != null) {
+                            playButton.classList.remove("PP-Playing");
+                            playButton.classList.add("PP-Play");
+                        }
+                        pauseButton.classList.remove("PP-Pause");
+                        pauseButton.classList.add("PP-Paused");
+                    }
+                }
+            </script>
+        </div>
+    </body>
 
 </html>
