@@ -6,16 +6,17 @@
     min-height: 16px;
     max-width: 16px;
     min-width: 16px;
-    margin: 4px 0px 4px 2px;
     border: none;
     outline: none;
     position: relative;
-    top: 2px;
+    top: 6px;
+    padding: 0;
+    margin: 0;
 }
 
 .PP-Play {
     background-image: url(../../img/icons/Ambience/MoonPlay.png);
-    left: 48px;
+    left: 50px;
 }
 
 .PP-Play:active {
@@ -24,12 +25,12 @@
 
 .PP-Playing {
     background-image: url(../../img/icons/Ambience/MoonPlaying.png);
-    left: 48px;
+    left: 50px;
 }
 
 .PP-pause {
     background-image: url(../../img/icons/Ambience/MoonPause.png);
-    left: 42px;
+    left: 46px;
 }
 
 .PP-pause:active {
@@ -38,20 +39,20 @@
 
 .PP-paused {
     background-image: url(../../img/icons/Ambience/MoonPaused.png);
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stop {
     background-image: url(../../img/icons/Ambience/MoonStop.png);
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stop:active {
     background-image: url(../../img/icons/Ambience/MoonStopped.png);
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stopped {
     background-image: url(../../img/icons/Ambience/MoonStopped.png);
-    left: 42px;
+    left: 46px;
 }

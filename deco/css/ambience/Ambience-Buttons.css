@@ -7,16 +7,17 @@
     min-height: 16px;
     max-width: 16px;
     min-width: 16px;
-    margin: 4px 0px 4px 2px;
     border: none;
     outline: none;
     position: relative;
-    top: 2px;
+    top: 6px;
+    padding: 0;
+    margin: 0;
 }
 
 .PP-Play {
     background-position-x: 0px;
-    left: 48px;
+    left: 50px;
 }
 
 .PP-Play:active {
@@ -25,12 +26,12 @@
 
 .PP-Playing {
     background-position-x: -16px;
-    left: 48px;
+    left: 50px;
 }
 
 .PP-pause {
     background-position-x: -32px;
-    left: 42px;
+    left: 46px;
 }
 
 .PP-pause:active {
@@ -39,20 +40,20 @@
 
 .PP-paused {
     background-position-x: -48px;
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stop {
     background-position-x: -64px;
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stop:active {
     background-position-x: -80px;
-    left: 42px;
+    left: 46px;
 }
 
 .PP-stopped {
     background-position-x: -80px;
-    left: 42px;
+    left: 46px;
 }
