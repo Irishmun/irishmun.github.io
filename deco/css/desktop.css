@@ -47,3 +47,91 @@ img.d-icon {
     left: 10px;
     cursor: default;
 }
+
+.window {
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+    padding: 3px;
+}
+
+.window-inner {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    background-color: #fff;
+    height: calc(100% - 45px);
+    padding: 0px 0px 0px 0px;
+    margin-top: -10px;
+}
+
+.window-inner>p {
+    padding: 4px;
+    overflow-wrap: break-word;
+    overflow-y: auto;
+    max-height: calc(100% - 10px);
+}
+
+.title-bar {
+    background: linear-gradient( 90deg, navy, #1084d0);
+    padding: 3px 2px 3px 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-bar-title {
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.controls-button {
+    background: silver;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
+    padding: 0;
+    display: block;
+    min-width: 16px;
+    min-height: 14px;
+    border: none;
+}
+
+.controls-button:active {
+    outline: 1px dotted #000000;
+    outline-offset: -4px;
+    box-shadow: inset -1px -1px #fff, inset 1px 1px #0a0a0a, inset -2px -2px #dfdfdf, inset 2px 2px grey;
+}
+
+.controls-button:focus {
+    outline: none;
+}
+
+.cb-minimize {
+    background-image: url(../img/icons/Minimize.png);
+    background-repeat: no-repeat;
+    background-position: bottom 3px left 4px;
+}
+
+.cb-maximize {
+    background-image: url(../img/icons/Maximize.png);
+    background-repeat: no-repeat;
+    background-position: top 2px left 3px;
+}
+
+.cb-close {
+    margin-left: 2px;
+    background-image: url(../img/icons/Close.png);
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+}
+
+.notepad-items {
+    padding-top: 2px;
+    margin-bottom: -12px;
+    margin-left: 2px;
+    user-select: none;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+    font-size: 12px;
+}
+
+.notepad-items>span {
+    padding-right: 2px;
+    padding-left: 2px;
+}
