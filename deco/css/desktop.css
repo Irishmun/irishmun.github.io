@@ -81,6 +81,7 @@ img.d-icon {
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-weight: 700;
     color: #fff;
+    user-select: none;
 }
 
 .controls-button {
