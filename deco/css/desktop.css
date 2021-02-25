@@ -84,6 +84,13 @@ img.d-icon {
     user-select: none;
 }
 
+.title-bar-title-icon {
+    margin-right: -3px;
+    top: 2px;
+    position: relative;
+    image-rendering: pixelated;
+}
+
 .controls-button {
     background: silver;
     box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey, inset 2px 2px #dfdfdf;
