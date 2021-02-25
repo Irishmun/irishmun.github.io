@@ -15,7 +15,7 @@
     text-align: center;
     font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-size: 12px;
-    color: white;
+    color: #fff;
     font-smooth: none;
     -webkit-font-smoothing: none;
     vertical-align: bottom;
@@ -39,6 +39,10 @@ img.d-icon {
     overflow: hidden;
     text-overflow: ellipsis;
     overflow-wrap: break-word;
+}
+
+.d-icon>.folder-title {
+    color: #000;
 }
 
 .icon-row {

@@ -9,6 +9,7 @@
 
 <body class="wallpaper">
     <div id: "Desktop" class="icon-row">
+        <!--Desktop icons-->
         <a class="d-icon" onclick="openWindow('WelcomeNote')">
             <img class="d-icon" src="./deco/img/desktop/TextFile.png">
             <div class="title">New Text Document</div>
@@ -22,14 +23,11 @@
             <img class="d-icon" src="./deco/img/desktop/lth.png">
             <div class="title">Last Train Home.exe</div>
         </a>
+
         <br>
-        <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/gitbookIcon.png">
-            <div class="title">Devlog.html</div>
-        </a>
-        <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/jazzman" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/jazzmanIcon2.png">
-            <div class="title">Jazzman devlog.html</div>
+        <a class="d-icon" onclick="openWindow('DevlogsFolder')">
+            <img class="d-icon" src="./deco/img/desktop/Folder.png">
+            <div class="title">Devlogs</div>
         </a>
         <!--<br>
         <a href="https://almosttransparentfox.tumblr.com/" class="d-icon">
@@ -38,7 +36,8 @@
         </a>-->
     </div>
 
-    <div id="WelcomeNote" class="window" style="position: absolute; width: 300px; height: 100px; left: 40%; top: 7%; ">
+    <!--Folders and "files"-->
+    <div id="WelcomeNote" class="window" style="position: absolute; width: 300px; height: 100px; left: 82%; top: 7%; ">
         <div class="title-bar">
             <div class="title-bar-title">
                 <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document - Notepad
@@ -53,6 +52,28 @@
         </div>
         <div class="window-inner ">
             <p>Welcome to my site! <br> I hope you'll enjoy your time here!</p>
+        </div>
+    </div>
+
+    <div id="DevlogsFolder" class="window" style="position: absolute; width: 400px; height: 300px; left: 30%; top: 32%; display: none;">
+        <div class="title-bar">
+            <div class="title-bar-title">
+                <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File explorer
+            </div>
+            <div style="display: flex;">
+                <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
+                </button>
+            </div>
+        </div>
+        <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
+            <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/" class="d-icon">
+                <img class="d-icon" src="./deco/img/desktop/gitbookIconBlack.png">
+                <div class="folder-title">Devlog.html</div>
+            </a>
+            <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/jazzman" class="d-icon">
+                <img class="d-icon" src="./deco/img/desktop/jazzmanIcon2.png">
+                <div class="folder-title">Jazzman devlog.html</div>
+            </a>
         </div>
     </div>
 
