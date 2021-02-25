@@ -1,0 +1,7 @@
+desktop/jazzmanIcon  		https://starbounder.org/Saxophone
+desktop/jazzmanIcon2 		https://www.spriters-resource.com/nintendo_64/donkeykong64/sheet/35997/
+desktop/lth			https://www.imdb.com/title/tt0338348/mediaviewer/rm3331165184/
+desktop/TextFile		windows 2000 text file icon
+desktop/moon			https://en.wikipedia.org/wiki/Moon
+icons/TrashBin 	     		windows 2000 trash bin icon
+background/moonsideFull		https://www.spriters-resource.com/snes/earthbound/sheet/3160/
