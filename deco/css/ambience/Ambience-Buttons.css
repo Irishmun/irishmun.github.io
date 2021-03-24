@@ -29,31 +29,31 @@
     left: 50px;
 }
 
-.PP-pause {
+.PP-Pause {
     background-position-x: -32px;
     left: 46px;
 }
 
-.PP-pause:active {
+.PP-Pause:active {
     background-position-x: -48px;
 }
 
-.PP-paused {
+.PP-Paused {
     background-position-x: -48px;
     left: 46px;
 }
 
-.PP-stop {
+.PP-Stop {
     background-position-x: -64px;
     left: 46px;
 }
 
-.PP-stop:active {
+.PP-Stop:active {
     background-position-x: -80px;
     left: 46px;
 }
 
-.PP-stopped {
+.PP-Stopped {
     background-position-x: -80px;
     left: 46px;
 }
