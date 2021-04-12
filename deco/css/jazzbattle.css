@@ -1,0 +1,19 @@
+.Out {
+    /*align-self: center;*/
+    border-radius: 5px;
+    padding: 5px;
+    max-width: 250px;
+    height: 20px;
+}
+
+.Pre {
+    background-color: cadetblue;
+}
+
+.Positive {
+    background-color: springgreen;
+}
+
+.Negative {
+    background-color: crimson;
+}
