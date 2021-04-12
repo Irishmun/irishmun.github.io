@@ -5,3 +5,4 @@ desktop/TextFile		windows 2000 text file icon
 desktop/moon			https://en.wikipedia.org/wiki/Moon
 icons/TrashBin 	     		windows 2000 trash bin icon
 background/moonsideFull		https://www.spriters-resource.com/snes/earthbound/sheet/3160/
+desktop/WAShipIcon		https://sketchfab.com/3d-models/flying-ship-9e09725534424150a8cc25a6770e2296
