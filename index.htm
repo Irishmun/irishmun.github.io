@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: calc(100% - 28px);">
 
 <head>
     <title>MilkmanMcGee</title>
@@ -7,121 +7,132 @@
     <link rel="stylesheet" href="./deco/css/desktop.css">
 </head>
 
-<body class="wallpaper" style="user-select: none;">
-    <div id: "Desktop" class="icon-row">
-        <!--Desktop icons-->
-        <a class="d-icon" onclick="openWindow('WelcomeNote')">
-            <img class="d-icon" src="./deco/img/desktop/TextFile.png">
-            <div class="title">New Text Document</div>
-        </a>
-        <br>
-        <a href="moon.htm" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/moon.png">
-            <div class="title">Moonside.exe</div>
-        </a>
-        <a href="./lasttrainhome.htm" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/lth.png">
-            <div class="title">Last Train Home.exe</div>
-        </a>
-        <br>
+<body class="wallpaper" style="user-select: none; height: 100%; margin: 0;" >
+    <div id="containment-wrapper" style="display: flex; flex:1 1 auto; flex-flow: column; height: 100%;">
 
-        <a href="shipbuilding.htm" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/WAShipIcon.png">
-            <div class="title">Ship Building.exe</div>
-        </a>
-        <br>
-        <a class="d-icon" onclick="openWindow('PortfolioFolder')">
-            <img class="d-icon" src="./deco/img/desktop/Folder.png">
-            <div class="title">Portfolio</div>
-        </a>
-        <br>
+        <div id="Desktop" class="icon-row">
+            <!--Desktop icons-->
+            <a class="d-icon" onclick="openWindow('WelcomeNote')">
+                <img class="d-icon" src="./deco/img/desktop/TextFile.png">
+                <div class="title">New Text Document</div>
+            </a>
+            <br>
+            <a href="moon.htm" class="d-icon">
+                <img class="d-icon" src="./deco/img/desktop/moon.png">
+                <div class="title">Moonside.exe</div>
+            </a>
+            <a href="./lasttrainhome.htm" class="d-icon">
+                <img class="d-icon" src="./deco/img/desktop/lth.png">
+                <div class="title">Last Train Home.exe</div>
+            </a>
+            <br>
 
-        <!--<br>
-        <a href="https://almosttransparentfox.tumblr.com/" class="d-icon">
-            <img class="d-icon" src="./deco/img/desktop/tumbrBookIcon.png">
-            <div class="title">tumblr.html</div>
-        </a>-->
-    </div>
-    <a href="https://poolside.fm/" target="_blank" class="d-icon" style="position: absolute; right: 0%; bottom: 3%;">
-        <img class="d-icon" src="./deco/img/desktop/Poolside.png">
-        <div class="title">Poolside.fm</div>
-    </a>
-    <!--Folders and "files"-->
-
-
-
-
-    <div id="WelcomeNote" class="window" style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
-        <div class="title-bar">
-            <div class="title-bar-title">
-                <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document - Notepad
-            </div>
-            <div style="display: flex;">
-                <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
-                </button>
-            </div>
-        </div>
-        <div class="notepad-items">
-            <span style="padding-left: 0px; padding-right: 0px;">File</span> <span>Edit</span><span>Format</span><span>Help</span>
-        </div>
-        <div class="window-inner ">
-            <p>Welcome to my site!😃 <br> I hope you'll enjoy your time here!</p>
-        </div>
-    </div>
-
-
-
-    <div id="PortfolioFolder" class="window" style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%; display: none;">
-        <div class="title-bar">
-            <div class="title-bar-title">
-                <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File explorer
-            </div>
-            <div style="display: flex;">
-                <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
-                </button>
-            </div>
-        </div>
-        <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
-            <!--folder elements-->
-            <a class="d-icon" onclick="openWindow('DevlogsFolder')">
+            <a href="shipbuilding.htm" class="d-icon">
+                <img class="d-icon" src="./deco/img/desktop/WAShipIcon.png">
+                <div class="title">Ship Building.exe</div>
+            </a>
+            <br>
+            <a class="d-icon" onclick="openWindow('PortfolioFolder')">
                 <img class="d-icon" src="./deco/img/desktop/Folder.png">
-                <div class="folder-title">Devlogs</div>
+                <div class="title">Portfolio</div>
             </a>
-            <a href="./portfolio/bip.htm" class="d-icon">
-                <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
-                <div class="folder-title">Portfolio.exe</div>
-            </a>
-            <!--end folder elements-->
-        </div>
-    </div>
+            <br>
 
-    <div id="DevlogsFolder" class="window Draggable" style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
-        <div class="title-bar">
-            <div class="title-bar-title">
-                <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File explorer
+            <!--<br>
+                <a href="https://almosttransparentfox.tumblr.com/" class="d-icon">
+                    <img class="d-icon" src="./deco/img/desktop/tumbrBookIcon.png">
+                    <div class="title">tumblr.html</div>
+                </a>-->
+        </div>
+        <a href="https://poolside.fm/" target="_blank" class="d-icon"
+            style="position: absolute; right: 0%; bottom: 3%;">
+            <img class="d-icon" src="./deco/img/desktop/Poolside.png">
+            <div class="title">Poolside.fm</div>
+        </a>
+        <!--Folders and "files"-->
+
+
+
+
+        <div id="draggable" class="window"
+            style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
+            <div id="WelcomeNote" class="title-bar">
+                <div class="title-bar-title">
+                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document -
+                    Notepad
+                </div>
+                <div style="display: flex;">
+                    <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
+                    </button>
+                </div>
             </div>
-            <div style="display: flex;">
-                <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
-                </button>
+            <div class="notepad-items">
+                <span style="padding-left: 0px; padding-right: 0px;">File</span>
+                <span>Edit</span><span>Format</span><span>Help</span>
+            </div>
+            <div class="window-inner ">
+                <p>Welcome to my site! <br> I hope you'll enjoy your time here!</p>
             </div>
         </div>
-        <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
-            <!--folder elements-->
-            <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/jazzman" class="d-icon">
-                <img class="d-icon" src="./deco/img/desktop/jazzmanIcon2.png">
-                <div class="folder-title">Jazzman devlog.html</div>
-            </a>
-            <!--end folder elements-->
-            <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/" class="d-icon">
-                <img class="d-icon" src="./deco/img/desktop/gitbookIconBlack.png">
-                <div class="folder-title">Devlog.html</div>
-            </a>
-            <!--actual end, first devlog will always be last-->
+
+
+
+        <div id="draggable" class="window"
+            style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%; display: none;">
+            <div id="PortfolioFolder" class="title-bar">
+                <div class="title-bar-title">
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File
+                    explorer
+                </div>
+                <div style="display: flex;">
+                    <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
+                    </button>
+                </div>
+            </div>
+            <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
+                <!--folder elements-->
+                <a class="d-icon" onclick="openWindow('DevlogsFolder')">
+                    <img class="d-icon" src="./deco/img/desktop/Folder.png">
+                    <div class="folder-title">Devlogs</div>
+                </a>
+                <a href="./portfolio/bip.htm" class="d-icon">
+                    <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
+                    <div class="folder-title">Portfolio.exe</div>
+                </a>
+                <!--end folder elements-->
+            </div>
         </div>
+
+        <div id="draggable" class="window Draggable"
+            style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
+            <div id="DevlogsFolder" class="title-bar">
+                <div class="title-bar-title">
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File
+                    explorer
+                </div>
+                <div style="display: flex;">
+                    <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
+                    </button>
+                </div>
+            </div>
+            <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
+                <!--folder elements-->
+                <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/jazzman" class="d-icon">
+                    <img class="d-icon" src="./deco/img/desktop/jazzmanIcon2.png">
+                    <div class="folder-title">Jazzman devlog.html</div>
+                </a>
+                <!--end folder elements-->
+                <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/" class="d-icon">
+                    <img class="d-icon" src="./deco/img/desktop/gitbookIconBlack.png">
+                    <div class="folder-title">Devlog.html</div>
+                </a>
+                <!--actual end, first devlog will always be last-->
+            </div>
+        </div>
+
+
     </div>
-
-
-    <div id: "Taskbar" class="Taskbar Taskbar-background ">
+    <div id="Taskbar" class="Taskbar Taskbar-background ">
         <button id="StartButton " class="StartButton ">
         </button>
         <span id="Clock" class="Clock TimeText ">
@@ -129,7 +140,13 @@
     </div>
     <script src="./code/clock.js"></script>
     <script src="./code/desktop.js"></script>
-
+    <script src="./code/jquery/external/jquery/jquery.min.js"></script>
+    <script src="./code/jquery/jquery-ui.min.js"></script>
+    <script>
+        $(function () {
+            $("#draggable").draggable({ handle: "div.title-bar", stack: "#set div", containment: "#containment-wrapper" });
+        });
+    </script>
 </body>
 
 </html>
