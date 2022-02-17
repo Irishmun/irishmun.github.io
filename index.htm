@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
     <title>MilkmanMcGee</title>
@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./deco/css/desktop.css">
 </head>
 
-<body class="wallpaper" >
+<body class="wallpaper">
     <div id="containment-wrapper" style="display: flex; flex:1 1 auto; flex-flow: column; height: 100%;">
 
         <div id="Desktop" class="icon-row">
             <!--Desktop icons-->
             <a class="d-icon" onclick="openWindow('WelcomeNote')">
                 <img class="d-icon" src="./deco/img/desktop/TextFile.png">
-                <div class="title">New Text Document</div>
+                <div class="title">New Text Document.txt</div>
             </a>
             <br>
             <a href="moon.htm" class="d-icon">
@@ -44,22 +44,17 @@
                     <div class="title">tumblr.html</div>
                 </a>-->
         </div>
-        <a href="https://poolside.fm/" target="_blank" class="d-icon"
-            style="position: absolute; right: 0%; bottom: 3%;">
+        <a href="https://poolside.fm/" target="_blank" class="d-icon" style="position: absolute; right: 0%; bottom: 3%;">
             <img class="d-icon" src="./deco/img/desktop/Poolside.png">
-            <div class="title">Poolside.fm</div>
+            <div class="title">Poolsuite.fm</div>
         </a>
         <!--Folders and "files"-->
 
 
-
-
-        <div id="draggable" class="window"
-            style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
+        <div id="draggable" class="window" style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
             <div id="WelcomeNote" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document -
-                    Notepad
+                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document - Notepad
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
@@ -75,14 +70,10 @@
             </div>
         </div>
 
-
-
-        <div id="draggable" class="window"
-            style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%; display: none;">
+        <div id="draggable" class="window" style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
             <div id="PortfolioFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File
-                    explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
@@ -99,16 +90,18 @@
                     <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
                     <div class="folder-title">Portfolio.exe</div>
                 </a>
+                <a href="./portfolio/gamejam/johnylegs.htm" class="d-icon">
+                    <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
+                    <div class="folder-title">JohnyLegs.exe</div>
+                </a>
                 <!--end folder elements-->
             </div>
         </div>
 
-        <div id="draggable" class="window Draggable"
-            style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
+        <div id="draggable" class="window Draggable" style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
             <div id="DevlogsFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File
-                    explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
@@ -143,8 +136,12 @@
     <script src="./code/jquery/external/jquery/jquery.min.js"></script>
     <script src="./code/jquery/jquery-ui.min.js"></script>
     <script>
-        $(function () {
-            $("#draggable").draggable({ handle: "div.title-bar", stack: "#set div", containment: "#containment-wrapper" });
+        $(function() {
+            $("#containment-wrapper div").draggable({
+                handle: "div.title-bar",
+                stack: "#containment-wrapper div",
+                containment: "#containment-wrapper"
+            });
         });
     </script>
 </body>

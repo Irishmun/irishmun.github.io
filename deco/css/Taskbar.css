@@ -45,3 +45,10 @@
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
 }
+
+.StartMenu-Sidebar {
+    background-image: linear-gradient(to bottom, #0000ff, #000080, #000000);
+    writing-mode: vertical-rl;
+    transform: rotate(-180deg);
+    color: white;
+}
