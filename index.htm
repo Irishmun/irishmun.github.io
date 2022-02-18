@@ -44,17 +44,20 @@
                     <div class="title">tumblr.html</div>
                 </a>-->
         </div>
-        <a href="https://poolside.fm/" target="_blank" class="d-icon" style="position: absolute; right: 0%; bottom: 3%;">
+        <a href="https://poolside.fm/" target="_blank" class="d-icon"
+            style="position: absolute; right: 0%; bottom: 3%;">
             <img class="d-icon" src="./deco/img/desktop/Poolside.png">
             <div class="title">Poolsuite.fm</div>
         </a>
+
         <!--Folders and "files"-->
 
-
-        <div id="draggable" class="window" style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
+        <div id="draggable" class="window"
+            style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
             <div id="WelcomeNote" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document - Notepad
+                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document -
+                    Notepad
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
@@ -70,10 +73,12 @@
             </div>
         </div>
 
-        <div id="draggable" class="window" style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
+        <div id="draggable" class="window"
+            style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
             <div id="PortfolioFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File
+                    explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
@@ -98,10 +103,12 @@
             </div>
         </div>
 
-        <div id="draggable" class="window Draggable" style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
+        <div id="draggable" class="window Draggable"
+            style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
             <div id="DevlogsFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File
+                    explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
@@ -126,24 +133,41 @@
 
     </div>
     <div id="Taskbar" class="Taskbar Taskbar-background ">
-        <button id="StartButton " class="StartButton ">
+        <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu')">
         </button>
         <span id="Clock" class="Clock TimeText ">
         </span>
     </div>
+    <div style="display: none; position: absolute; left: 0px; bottom: 27px;" id="StartMenuParent">
+        <img src="./deco/img/desktop/windows.png" id="StartMenu" />
+    </div>
+
+    <!--Scripts-->
     <script src="./code/clock.js"></script>
     <script src="./code/desktop.js"></script>
     <script src="./code/jquery/external/jquery/jquery.min.js"></script>
     <script src="./code/jquery/jquery-ui.min.js"></script>
     <script>
-        $(function() {
-            $("#containment-wrapper div").draggable({
+        $(function () {
+            $("#containment-wrapper #draggable").draggable({
                 handle: "div.title-bar",
                 stack: "#containment-wrapper div",
                 containment: "#containment-wrapper"
             });
         });
     </script>
+    <script>
+        $("body").on("pointerdown", function (e) {
+            if ($(e.target).closest("#StartMenu, .StartButton").length === 0) {
+                document.getElementById("StartMenuParent").style.display = "none";
+            }
+            /*else if($(e.target).closest("#StartButton").length === 0) 
+            {
+                
+            }*/
+        });
+    </script>
+
 </body>
 
 </html>

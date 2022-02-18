@@ -100,6 +100,10 @@ img.d-icon {
     font-weight: 700;
     color: #fff;
     user-select: none;
+    font-size: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .title-bar-title-icon {
@@ -160,4 +164,8 @@ img.d-icon {
 .notepad-items>span {
     padding-right: 2px;
     padding-left: 2px;
+}
+
+.resize-helper{
+    border: 1px dotted #000;
 }
