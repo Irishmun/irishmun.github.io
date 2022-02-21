@@ -146,15 +146,20 @@
         <!--Task Bar-->
     </div>
     <div id="Taskbar" class="Taskbar Taskbar-background ">
-        <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu')">
+        <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu',false)">
         </button>
         <span id="Clock" class="Clock TimeText ">
         </span>
     </div>
 
-    <div style="display: none; position: absolute; left: 0px; bottom: 27px;" id="StartMenuParent">
-        <img src="./deco/img/desktop/windows.png" id="StartMenu" />
+    <div style="display: block; position: absolute; right: 0px; bottom: 27px;" id="StartMenuExParent">
+        <img src="./deco/img/desktop/windows.png" id="StartMenuEx" />
     </div>
+
+    <div class="StartMenu-Window" style="display: block;" id="StartMenu">
+        <img src="./deco/img/desktop/StartMenu_Name.png" class="StartMenu-Sidebar"/>
+    </div>
+
 
     <!--Scripts-->
     <script src="./code/clock.js"></script>
@@ -173,7 +178,7 @@
     <script>
         $("body").on("pointerdown", function (e) {
             if ($(e.target).closest("#StartMenu, .StartButton").length === 0) {
-                document.getElementById("StartMenuParent").style.display = "none";
+                document.getElementById("StartMenu").style.display = "none";
             }
             /*else if($(e.target).closest("#StartButton").length === 0) 
             {

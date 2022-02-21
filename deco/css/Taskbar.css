@@ -45,10 +45,36 @@
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
 }
+.StartMenu-Window {
+    position: absolute;
+    left: 1px;
+    bottom: 28px;
+    width: 254px;
+    height: 311px;
+    box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #dfdfdf, inset -2px -2px grey, inset 2px 2px #fff;
+    background: silver;
+    background-color: #D4D0C8;
+}
+
+.StartMenu-window-inner {
+    box-shadow: inset -1px -1px #fff, inset 1px 1px grey, inset -2px -2px #dfdfdf, inset 2px 2px #0a0a0a;
+    height: calc(100% - 45px);
+    padding: 0px 0px 0px 0px;
+    margin-top: -10px;
+}
 
 .StartMenu-Sidebar {
-    background-image: linear-gradient(to bottom, #0000ff, #000080, #000000);
+    background-image: linear-gradient(to top, #0000ff, #000080, #000000);
     writing-mode: vertical-rl;
-    transform: rotate(-180deg);
     color: white;
+    height: 305px;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+
