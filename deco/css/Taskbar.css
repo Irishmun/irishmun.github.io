@@ -11,12 +11,20 @@
     background-color: #D4D0C8;
 }
 
+.Taskbar-Spacer {
+    height: 22px;
+    width: 2px;
+    position: fixed;
+    bottom: 2px;
+    left: 61px;
+}
+
 .StartButton {
     background-image: url(../img/icons/StartButtonClassic.png);
     background-repeat: no-repeat;
     height: 22px;
     width: 55px;
-    margin: 4px 0px 4px 2px;
+    margin: 4px 0px 4px 3px;
     border: none;
     outline: none;
 }
@@ -45,6 +53,7 @@
     -webkit-font-smoothing: none;
     -moz-osx-font-smoothing: none;
 }
+
 .StartMenu-Window {
     position: absolute;
     left: 1px;
@@ -65,7 +74,7 @@
 
 .StartMenu-Sidebar {
     background-image: linear-gradient(to top, #0000ff, #000080, #000000);
-    writing-mode: vertical-rl;
+    image-rendering: pixelated;
     color: white;
     height: 305px;
     position: absolute;
@@ -78,3 +87,29 @@
     -ms-user-select: none;
 }
 
+.StartMenu-ButtonHolder {
+    position: fixed;
+    left: 25px;
+    margin-top: 3px;
+    height: 305px;
+    width: 224px;
+}
+
+.StartMenu-ButtonHolder>button {
+    width: 224px;
+    height: 32px;
+    color: black;
+    text-align: left;
+    vertical-align: middle;
+    background-color: transparent;
+    border: 0;
+}
+
+.StartMenu-ButtonHolder>button>span>img {
+    vertical-align: middle;
+}
+
+.StartMenu-ButtonHolder>button:active {
+    background-color: #0A246A;
+    color: white;
+}

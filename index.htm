@@ -57,20 +57,17 @@
                     <div class="title">tumblr.html</div>
                 </a>-->
         </div>
-        <a href="https://poolside.fm/" target="_blank" class="d-icon"
-            style="position: absolute; right: 0%; bottom: 3%;">
+        <a href="https://poolside.fm/" target="_blank" class="d-icon" style="position: absolute; right: 0%; bottom: 3%;">
             <img class="d-icon" src="./deco/img/desktop/Poolside.png">
             <div class="title">Poolsuite.fm</div>
         </a>
 
         <!--Folders and "files"-->
 
-        <div id="draggable" class="window"
-            style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
+        <div id="draggable" class="window" style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
             <div id="WelcomeNote" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document -
-                    Notepad
+                    <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document - Notepad
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
@@ -86,12 +83,10 @@
             </div>
         </div>
 
-        <div id="draggable" class="window"
-            style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
+        <div id="draggable" class="window" style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
             <div id="PortfolioFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File
-                    explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Portfolio - File explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
@@ -116,12 +111,10 @@
             </div>
         </div>
 
-        <div id="draggable" class="window Draggable"
-            style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
+        <div id="draggable" class="window Draggable" style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
             <div id="DevlogsFolder" class="title-bar">
                 <div class="title-bar-title">
-                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File
-                    explorer
+                    <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs - File explorer
                 </div>
                 <div style="display: flex;">
                     <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
@@ -146,18 +139,21 @@
         <!--Task Bar-->
     </div>
     <div id="Taskbar" class="Taskbar Taskbar-background ">
-        <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu',false)">
-        </button>
+        <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu',false)"></button>
+        <img src="./deco/img/desktop/SpaceVertical.png" class="Taskbar-Spacer" />
         <span id="Clock" class="Clock TimeText ">
         </span>
     </div>
 
-    <div style="display: block; position: absolute; right: 0px; bottom: 27px;" id="StartMenuExParent">
+    <div style="display: block; position: absolute; left: 254px; bottom: 27px;" id="StartMenuExParent">
         <img src="./deco/img/desktop/windows.png" id="StartMenuEx" />
     </div>
 
     <div class="StartMenu-Window" style="display: block;" id="StartMenu">
-        <img src="./deco/img/desktop/StartMenu_Name.png" class="StartMenu-Sidebar"/>
+        <img src="./deco/img/desktop/StartMenu_Name.png" class="StartMenu-Sidebar" />
+        <div class="StartMenu-ButtonHolder">
+            <button> <span><img src="./deco/img/icons/taskbarShutdown.png"/>Shut Down...</span></button>
+        </div>
     </div>
 
 
@@ -167,7 +163,7 @@
     <script src="./code/jquery/external/jquery/jquery.min.js"></script>
     <script src="./code/jquery/jquery-ui.min.js"></script>
     <script>
-        $(function () {
+        $(function() {
             $("#containment-wrapper #draggable").draggable({
                 handle: "div.title-bar",
                 stack: "#containment-wrapper div",
@@ -176,7 +172,7 @@
         });
     </script>
     <script>
-        $("body").on("pointerdown", function (e) {
+        $("body").on("pointerdown", function(e) {
             if ($(e.target).closest("#StartMenu, .StartButton").length === 0) {
                 document.getElementById("StartMenu").style.display = "none";
             }
