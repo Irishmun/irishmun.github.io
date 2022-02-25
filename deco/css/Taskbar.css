@@ -12,6 +12,7 @@
 }
 
 .Taskbar-Spacer {
+    background-image: url("../img/desktop/SpaceVertical.png");
     height: 22px;
     width: 2px;
     position: fixed;
@@ -96,20 +97,42 @@
 }
 
 .StartMenu-ButtonHolder>button {
-    width: 224px;
+    width: 227px;
     height: 32px;
     color: black;
     text-align: left;
     vertical-align: middle;
     background-color: transparent;
     border: 0;
+    font-size: 11px;
+    font-smooth: never;
+    -webkit-font-smoothing: none;
+    text-shadow: 0px 0px 0px #dfdfdf;
+    padding-left: 2px;
 }
 
-.StartMenu-ButtonHolder>button>span>img {
+.StartMenu-ButtonHolder>button>span{
+    padding-left: 7px;
+}
+
+.StartMenu-ButtonHolder>button>img {
     vertical-align: middle;
 }
 
-.StartMenu-ButtonHolder>button:active {
+.StartMenu-ButtonHolder>button:hover {
     background-color: #0A246A;
     color: white;
+}
+
+.StartMenu-ButtonHolder>button:disabled {
+    visibility: hidden;
+}
+
+.StartMenu-Spacer {
+    background-image: url("../img/desktop/SpaceHorizontal.png");
+    height: 2px;
+    width: 223px;
+    margin-top: 3px;
+    margin-left: 2px;
+    margin-bottom: 3px;
 }

@@ -5,6 +5,7 @@
     <title>MilkmanMcGee</title>
     <link rel="stylesheet" href="./deco/css/Taskbar.css">
     <link rel="stylesheet" href="./deco/css/desktop.css">
+    <link rel="stylesheet" href="./deco/css/Global.css">
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./deco/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./deco/icon/favicon-32x32.png">
@@ -140,7 +141,7 @@
     </div>
     <div id="Taskbar" class="Taskbar Taskbar-background ">
         <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu',false)"></button>
-        <img src="./deco/img/desktop/SpaceVertical.png" class="Taskbar-Spacer" />
+        <div class="Taskbar-Spacer"></div>
         <span id="Clock" class="Clock TimeText ">
         </span>
     </div>
@@ -152,7 +153,17 @@
     <div class="StartMenu-Window" style="display: block;" id="StartMenu">
         <img src="./deco/img/desktop/StartMenu_Name.png" class="StartMenu-Sidebar" />
         <div class="StartMenu-ButtonHolder">
-            <button> <span><img src="./deco/img/icons/taskbarShutdown.png"/>Shut Down...</span></button>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <div class="StartMenu-Spacer invisible" style="margin-top:4px;"></div>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <button disabled><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
+            <button><img src="./deco/img/icons/taskbarHelp.png"/><span>About Me</span></button>
+            <button><img src="./deco/img/icons/taskbarRun.png"/><span>Run...</span></button>
+            <div class="StartMenu-Spacer"></div>
+            <button><img src="./deco/img/icons/taskbarShutdown.png"/><span>Shut Down...</span></button>
         </div>
     </div>
 
@@ -176,10 +187,6 @@
             if ($(e.target).closest("#StartMenu, .StartButton").length === 0) {
                 document.getElementById("StartMenu").style.display = "none";
             }
-            /*else if($(e.target).closest("#StartButton").length === 0) 
-            {
-                
-            }*/
         });
     </script>
 
