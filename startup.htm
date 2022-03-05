@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MilkmanMcGee</title>
+    <link rel="stylesheet" href="./deco/css/desktop.css">
+    <link rel="stylesheet" href="./deco/css/Global.css">
+    <link rel="stylesheet" href="./deco/css/logon.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./deco/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./deco/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./deco/icon/favicon-16x16.png">
+    <link rel="manifest" href="./deco/icon/site.webmanifest">
+    <link rel="mask-icon" href="./deco/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./deco/icon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Portfolio">
+    <meta name="application-name" content="Portfolio">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/deco/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--End Favicon-->
+</head>
+
+<body class="wallpaper">
+    <div id="bodyOne"  style="display: flex; justify-content: center; align-items: center; height: 100%;">
+    <div id="mainWindow" class="mainWindow window">
+        <div class="logon-bar">
+            <div class="logon-title">
+                Log On to Windows
+            </div>
+        </div>
+        <img src="./deco/img/logon/LogonHeader.png" />
+        <div class="logonSpacer" style="width: 100%;"></div>
+
+        <form>
+            <p>User Name:<input type="text"></p>
+            <p>Password:<input type="password"></p>
+            <span>
+                <input type="button" value="OK" onclick="hideThis()">
+                <input disabled type="button" value="Cancel">
+                <input type="button" value="Shutdown..." onclick="shutitdown()">
+                <input disabled type="button" value="Options<<">
+            </span>
+        </form>
+    </div>
+    <div id="overlay" style="background-color:#3A6EA5; position:absolute; top:0; width: 100%;"></div>
+    <audio src="./deco/music/Windows 2000 Shutdown.mp3" id="shutdownSound"></audio>
+    <script src="./code/desktop.js"></script>
+
+    <script>
+        function shutitdown() {
+            alert("A");
+            let overlay = document.getElementById("overlay");
+            overlay.classList.add("shutdown");
+            let animFinished = overlay.finished
+            shutDown('mainWindow', 750);
+        }
+        function hideThis() {
+            document.getElementById("bodyOne").style.display = "none";
+            document.getElementById("bodyTwo").style.display = "block";
+        }
+    </script>
+    </div>
+    <div id="bodyTwo" style="display: none; height: 0%;">
+        <img src="./deco/img/background/moonsideFull.png">
+    </div>
+</body>
+
+
+</html>

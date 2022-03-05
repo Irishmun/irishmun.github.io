@@ -172,3 +172,23 @@ img.d-icon {
 .resize-helper {
     border: 1px dotted #000;
 }
+
+.shutdown {
+    -webkit-animation: .5s 0s linear shutdownanim forwards;
+    -moz-animation: .5s 0s linear shutdownanim forwards;
+    -o-animation: .5s 0s linear shutdownanim forwards;
+    animation: .5s 0s linear shutdownanim forwards;
+}
+
+@keyframes shutdownanim{
+    from{
+        height: 0%;
+    }
+    to{
+        height: 100%;
+    }
+}
+
+#run{
+    border: none;
+}
