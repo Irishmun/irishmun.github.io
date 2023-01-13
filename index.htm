@@ -3,10 +3,10 @@
 
 <head>
     <title>MilkmanMcGee</title>
-    <link rel="stylesheet" href="./deco/css/Taskbar.css">
-    <link rel="stylesheet" href="./deco/css/desktop.css">
-    <link rel="stylesheet" href="./deco/css/Global.css">
-    <link rel="stylesheet" href="./deco/css/logon.css">
+    <link rel="alternate" hreflang="en">
+    <!--css-->
+    <link rel="stylesheet" href="./deco/css/global.css">
+    <link rel="stylesheet" href="./deco/css/intro.css">
     <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="./deco/icon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./deco/icon/favicon-32x32.png">
@@ -22,263 +22,18 @@
     <!--End Favicon-->
 </head>
 
-<body class="wallpaper">
-    <div id="bodyOne" style="display: flex; justify-content: center; align-items: center; height: 100%;">
-        <div id="mainWindow" class="mainWindow window">
-            <div class="logon-bar">
-                <div class="logon-title">
-                    Log On to Windows
-                </div>
-            </div>
-            <img src="./deco/img/logon/LogonHeader.png" />
-            <div class="logonSpacer" style="width: 100%;"></div>
-
-            <form class="logonform">
-                <div style="margin-top: 13px;">
-                    <span>User Name:</span>
-                    <input type="text" value="Admin"></br>
-                    <span>Password:</span>
-                    <input type="password">
-                </div>
-                <div style="float:right; margin-right: 10px; margin-top: 36px;">
-                    <input class="logon-button" type="button" value="OK" onclick="logIn()">
-                    <input class="other-button" disabled type="button" value="Cancel">
-                    <input class="other-button" type="button" value="Shutdown..." onclick="shutitdown()">
-                    <input class="other-button" disabled type="button" value="Options<<">
-                </div>
-            </form>
-        </div>
-
-        <audio src="./deco/music/Windows 2000 Shutdown.mp3" id="shutdownSound"></audio>
-        <script src="./code/desktop.js"></script>
-
-        <script>
-
-            function logIn() {
-                document.getElementById("bodyTwo").style.display = "block";
-                document.getElementById("bodyTwo").style.height = "100%";
-                document.getElementById("bodyOne").style.display = "none";
-                startUp();
-            }
-        </script>
+<body>
+    <h1 id="Intro" class="intro">STEEF</h1>
+    <div id="Main" class="center-child">
+        <p>
+            hmm yes very nice
+        </p>
     </div>
+    <!--NavBar-->
 
-    <div id="bodyTwo" style="display: none; height: 100%;">
-        <div id="desktopContents" style="height: 100%;">
-            <div id="containment-wrapper" style="display: flex; flex:1 1 auto; flex-flow: column; height: 100%;">
-
-                <div id="Desktop" class="icon-row">
-                    <!--Desktop icons-->
-                    <a class="d-icon" onclick="openWindow('WelcomeNote')">
-                        <img class="d-icon" src="./deco/img/desktop/TextFile.png">
-                        <div class="title">New Text Document.txt</div>
-                    </a>
-                    <br>
-                    <a href="moon.htm" class="d-icon">
-                        <img class="d-icon" src="./deco/img/desktop/moon.png">
-                        <div class="title">Moonside.exe</div>
-                    </a>
-                    <a href="./lasttrainhome.htm" class="d-icon">
-                        <img class="d-icon" src="./deco/img/desktop/lth.png">
-                        <div class="title">Last Train Home.exe</div>
-                    </a>
-                    <br>
-
-                    <a href="shipbuilding.htm" class="d-icon">
-                        <img class="d-icon" src="./deco/img/desktop/WAShipIcon.png">
-                        <div class="title">Ship Building.exe</div>
-                    </a>
-                    <br>
-                    <a class="d-icon" onclick="openWindow('PortfolioFolder')">
-                        <img class="d-icon" src="./deco/img/desktop/Folder.png">
-                        <div class="title">Portfolio</div>
-                    </a>
-                    <br>
-
-                    <!--<br>
-                    <a href="https://almosttransparentfox.tumblr.com/" class="d-icon">
-                        <img class="d-icon" src="./deco/img/desktop/tumbrBookIcon.png">
-                        <div class="title">tumblr.html</div>
-                    </a>-->
-                </div>
-                <a href="https://poolside.fm/" target="_blank" class="d-icon"
-                    style="position: absolute; right: 0%; bottom: 3%;">
-                    <img class="d-icon" src="./deco/img/desktop/Poolside.png">
-                    <div class="title">Poolsuite.fm</div>
-                </a>
-
-                <!--Folders and "files"-->
-                <div class="window" style="display:none; height: 100%; z-index: 999999;">
-                    <div id="RunProgram" class="title-bar">
-                        <div class="title-bar-title">
-                            Running away are we?
-                        </div>
-                        <div style="display: flex;">
-                            <button class="controls-button cb-close" onclick="closeRunframe()">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
-                        <iframe id="run" src="./blank.htm" style="width: 100%; height: 100%; user-select:none;"></iframe>
-                    </div>
-                </div>
-                <div id="draggable" class="window"
-                    style="position: absolute; width: 300px; height: 100px; right: 5%; top: 7%; ">
-                    <div id="WelcomeNote" class="title-bar">
-                        <div class="title-bar-title">
-                            <img src="./deco/img/icons/notepadSmall.png" class="title-bar-title-icon"> New Text Document
-                            -
-                            Notepad
-                        </div>
-                        <div style="display: flex;">
-                            <button class="controls-button cb-close" onclick="closeWindow('WelcomeNote')">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="notepad-items">
-                        <span style="padding-left: 0px; padding-right: 0px;">File</span>
-                        <span>Edit</span><span>Format</span><span>Help</span>
-                    </div>
-                    <div class="window-inner ">
-                        <p>Welcome to my site! <br> I hope you'll enjoy your time here!</p>
-                    </div>
-                </div>
-
-                <div id="draggable" class="window"
-                    style="position: absolute; width: 400px; height: 300px; right: 25%; top: 25%;">
-                    <div id="runaway" class="title-bar">
-                        <div class="title-bar-title">
-                            <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon">
-                            Portfolio - File explorer
-                        </div>
-                        <div style="display: flex;">
-                            <button class="controls-button cb-close" onclick="closeWindow('PortfolioFolder')">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
-                        <!--folder elements-->
-                        <a class="d-icon" onclick="openWindow('DevlogsFolder')">
-                            <img class="d-icon" src="./deco/img/desktop/Folder.png">
-                            <div class="folder-title">Devlogs</div>
-                        </a>
-                        <a href="./portfolio/bip.htm" class="d-icon">
-                            <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
-                            <div class="folder-title">Portfolio.exe</div>
-                        </a>
-                        <a href="./portfolio/gamejam/johnylegs.htm" class="d-icon">
-                            <img class="d-icon" src="./deco/img/desktop/placeholderWebPage.png">
-                            <div class="folder-title">JohnyLegs.exe</div>
-                        </a>
-                        <!--end folder elements-->
-                    </div>
-                </div>
-
-
-
-                <div id="draggable" class="window Draggable"
-                    style="position: absolute; width: 400px; height: 300px; right: 30%; top: 32%; display: none;">
-                    <div id="DevlogsFolder" class="title-bar">
-                        <div class="title-bar-title">
-                            <img src="./deco/img/icons/fileExplorerSmall.png" class="title-bar-title-icon"> Devlogs -
-                            File explorer
-                        </div>
-                        <div style="display: flex;">
-                            <button class="controls-button cb-close" onclick="closeWindow('DevlogsFolder')">
-                            </button>
-                        </div>
-                    </div>
-                    <div class="window-inner " style="margin-top: 3px; height: calc(100% - 29px);">
-                        <!--folder elements-->
-                        <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/jazzman" class="d-icon">
-                            <img class="d-icon" src="./deco/img/desktop/jazzmanIcon2.png">
-                            <div class="folder-title">Jazzman devlog.html</div>
-                        </a>
-                        <!--end folder elements-->
-                        <a href="https://steefvdweijdeven.gitbook.io/steef-s-devlog/" class="d-icon">
-                            <img class="d-icon" src="./deco/img/desktop/gitbookIconBlack.png">
-                            <div class="folder-title">Devlog.html</div>
-                        </a>
-                        <!--actual end, first devlog will always be last-->
-                    </div>
-                </div>
-
-                <!--Task Bar-->
-            </div>
-            <div id="Taskbar" class="Taskbar Taskbar-background ">
-                <button id="StartButton " class="StartButton" onmouseup="toggleWindow('StartMenu',false)"></button>
-                <div class="Taskbar-Spacer"></div>
-                <span id="Clock" class="Clock TimeText ">
-                </span>
-            </div>
-            <div class="StartMenu-Window" style="display: block;" id="StartMenu">
-                <img src="./deco/img/desktop/StartMenu_Name.png" class="StartMenu-Sidebar" />
-                <div class="StartMenu-ButtonHolder">
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <div class="StartMenu-Spacer invisible" style="margin-top:4px;"></div>
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <button disabled><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                    <button disabled><img src="./deco/img/icons/taskbarHelp.png" /><span>About Me</span></button>
-                    <button onclick="runframe()"><img
-                            src="./deco/img/icons/taskbarRun.png" /><span>Run...</span></button>
-                    <div class="StartMenu-Spacer"></div>
-                    <button onclick="shutitdown()"><img src="./deco/img/icons/taskbarShutdown.png" /><span>Shut
-                            Down...</span></button>
-                </div>
-            </div>
-        </div>
-        <audio src="./deco/music/Windows 2000 Shutdown.mp3" id="shutdownSound"></audio>
-        <audio src="./deco/music/Windows 2000 Startup.mp3" id="startupSound"></audio>
-
-        <!--Scripts-->
-        <script src="./code/clock.js"></script>
-        <script src="./code/desktop.js"></script>
-        <script src="./code/jquery/external/jquery/jquery.min.js"></script>
-        <script src="./code/jquery/jquery-ui.min.js"></script>
-        <script>
-            $(function () {
-                $("#containment-wrapper #draggable").draggable({
-                    handle: "div.title-bar",
-                    stack: "#containment-wrapper div",
-                    containment: "#containment-wrapper"
-                });
-            });
-
-            $("body").on("pointerdown", function (e) {
-                if ($(e.target).closest("#StartMenu, .StartButton").length === 0) {
-                    document.getElementById("StartMenu").style.display = "none";
-                }
-            });
-
-            function runframe() {
-                openWindow('RunProgram');
-                let run = document.getElementById("run");
-                run.src = "./whoareyourunningfrom.htm";
-            }
-            function closeRunframe() {
-                let run = document.getElementById("run");
-                run.src = "./blank.htm";
-                closeWindow('RunProgram');
-            }
-            function shutitdown() {
-                let overlay = document.getElementById("overlay");
-                overlay.classList.add("shutdown");
-                let animFinished = overlay.finished
-                shutDown('mainWindow', 750);
-            }
-        </script>
-    </div>
-
-    <div id="overlay" style="background-color:#3A6EA5; position:absolute; top:0; width: 100%;"></div>
+    <!--Scripts-->
+    <script src="./code/clock.js"></script>
+    <script src="./code/intro.js"></script>
 </body>
 
 </html>

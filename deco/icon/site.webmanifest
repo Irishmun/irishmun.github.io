@@ -1,6 +1,6 @@
 {
-    "name": "Portfolio",
-    "short_name": "Portfolio",
+    "name": "Steef's portfolio",
+    "short_name": "Steef",
     "icons": [
         {
             "src": "/deco/icon/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#3A6EA5",
+    "background_color": "#3A6EA5",
     "display": "standalone"
 }

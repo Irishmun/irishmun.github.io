@@ -13,7 +13,7 @@ body>* {
 }
 
 .Ambience {
-    background-image: url(../img/icons/MusicPlayer.png);
+    background-image: url(../img/icons/Ambience/MusicPlayer.png);
     height: 32px;
     width: 92px;
     image-rendering: pixelated;
