@@ -32,6 +32,10 @@ body {
     overflow: hidden;
 }
 
+html{
+    cursor: url(../ui/cursor/NORMAL.png)0 0, auto;
+}
+
 * {
     font-family: Courier, monospace;
     color: white;
