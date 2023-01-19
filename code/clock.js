@@ -12,8 +12,9 @@ function startTime() {
     today = new Date();
     h = today.getHours(); //hours
     m = today.getMinutes(); //minutes
-    clock = document.getElementById('Clock');
+    //clock = document.getElementById('Clock');
     m = checkTime(m);
+    h = checkTime(h);
 
     if (h >= 0 && h < 11) {
         clock.innerHTML =
@@ -22,9 +23,7 @@ function startTime() {
         clock.innerHTML =
             h + ":" + m + " PM";
     }
-    let t = setTimeout(startTime, 5000);
-
-
+    setTimeout(startTime, 5000);
 }
 
 function checkTime(i) {

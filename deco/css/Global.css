@@ -1,29 +1,43 @@
 @font-face {
     font-family: 'Courier';
-    src: url('../fonts/CourierPrime-Regular.ttf');
+    src: url('../fonts/Courier/CourierPrime-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Courier';
-    src: url('../fonts/CourierPrime-Bold.ttf');
+    src: url('../fonts/Courier/CourierPrime-Bold.ttf');
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Courier';
-    src: url('../fonts/CourierPrime-Italic.ttf');
+    src: url('../fonts/Courier/CourierPrime-Italic.ttf');
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Courier';
-    src: url('../fonts/CourierPrime-BoldItalic.ttf');
+    src: url('../fonts/Courier/CourierPrime-BoldItalic.ttf');
     font-weight: bold;
     font-style: italic;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url('../fonts/eurostile/EurostileRegular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Eurostile';
+    src: url('../fonts/eurostile/EurostileBold.ttf');
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
@@ -37,14 +51,19 @@ html{
 }
 
 * {
-    font-family: Courier, monospace;
+    font-family: Eurostile, monospace;
+    font-variant-numeric: tabular-nums;
     color: white;
 }
 
 .center-child {
+    display: block;
     text-align: center;
+    align-content: center;
 }
 
 .center-child>* {
+    display: block;
     text-align: center;
+    align-content: center;
 }
