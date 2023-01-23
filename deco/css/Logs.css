@@ -1,7 +1,4 @@
-.display {
-    /*background-color: #004030;*/
-    color: #00FFBD;
-}
+
 
 .log-device {
     min-width: 134px;
@@ -15,4 +12,5 @@
     padding: 11px 35px 9px 13px;
     overflow-wrap: break-word;
     text-align: justify;
+    color: #00FFBD;
 }
