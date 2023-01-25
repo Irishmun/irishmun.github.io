@@ -1,0 +1,18 @@
+.back{
+    font-family: Eurostile, monospace;
+    font-variant-numeric: tabular-nums;
+    color: white;
+    position: fixed;
+    left: 15px;
+    top:15px;
+    border: none;
+    background: none;
+}
+
+.rock{
+    position: absolute; /* or absolute */
+    top: 50%;
+    left: 50%;
+    margin-top: -64px;
+    margin-left: -64px;
+}
