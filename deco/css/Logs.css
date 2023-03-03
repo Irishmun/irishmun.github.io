@@ -2,7 +2,7 @@
     margin: 0 auto;
     min-width: 134px;
     min-height: 270px;
-    max-width: 1280px;
+    max-width: 1024px;
     border-image-source: url('../img/ui/logs/logbase.png');
     border-image-slice: 146 47 10 50 fill;
     border-image-width: 146px 47px 10px 50px;
@@ -13,6 +13,16 @@
     overflow-wrap: break-word;
     text-align: justify;
     color: #00FFBD;
+}
+
+.log-device *{
+    color: #00FFBD;
+}
+
+.log-device hr {
+    border-color: #00FFBD;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .log-table {

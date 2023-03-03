@@ -26,10 +26,16 @@
 
 <body>
     <h1 id="Intro" class="intro">STEEF</h1>
-    <div id="Main" class="center-child" style="opacity: 0;">
-        <h2>
-            hmm yes yes very nice <span id="Age"></span>
-        </h2>
+    <div id="Main" class="main" style="opacity: 0;">
+        <div class="centered">
+            <h2>
+                hmm yes yes very nice <span id="Age"></span>
+            </h2>
+            <p>
+                Through incredible new technologies, you are now able to see a live view of my thoughts! <br>
+                Simply click here: <a href="./thoughts.htm" onclick="loadThoughts()" target="thoughts">my thoughts.</a>                
+            </p>
+        </div>
         <!-- <div style="text-align: center; border: 1px solid white; width: fit-content;" id="Clock">
             00:00 AM
         </div>-->
@@ -41,23 +47,23 @@
                         <td>
                             <a href="portfolio/">
                                 <img src="./deco/img/icons/notes.gif" class="btn"/>
-                                Notes
+                                Portfolio
                             </a>
                         </td>
                         <td>
-                            test
+                            <a href="./about.htm">
+                                <img src="./deco/img/icons/profile.gif" class="btn"/>
+                                Profile
+                            </a>
                         </td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <iframe src="about:blank" id="thoughts" style="position: absolute; top: 0px; left: 0px; display: none;"
-        <p>
-            Through incredible new technologies, you are now able to see a live view of my thoughts! <br>
-            Simply click here: <a href="./thoughts.htm" onclick="loadThoughts()" target="thoughts">my thoughts.</a>
-        </p>
         name="thoughts" scrolling="no" frameborder="0" marginheight="0px" marginwidth="0px" height="100%"
         width="100%" allowfullscreen></iframe>
+
     </div>
     <!--Scripts-->
     <!--<script src="./code/clock.js"></script>-->

@@ -4,7 +4,7 @@ body {
     overflow: hidden;
 }
 
-html{
+html {
     cursor: url(../img/ui/cursor/NORMAL.png)0 0, auto;
 }
 
@@ -14,19 +14,29 @@ html{
     color: white;
 }
 
-button{
+button {
     background-color: transparent;
     border: solid 1px #fff;
 }
 
-.center-child {
-    display: block;
+.main {
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.centered{
     text-align: center;
     align-content: center;
 }
 
-.center-child>* {
-    display: block;
+.nav{
+    border: solid 1px #00FFBD;
+    font-size: smaller;
     text-align: center;
-    align-content: center;
+    margin: 8px auto 50px auto;
+    max-width: 1024px;
+    padding-bottom: 3px;
+}
+.nav>*{
+    color:#00FFBD;
 }
