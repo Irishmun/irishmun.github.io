@@ -1,11 +1,12 @@
 .log-device {
-    margin: 0 auto;
+    margin: 0 auto 50px;
+    width: min-content;
     min-width: 134px;
     min-height: 270px;
-    max-width: 1024px;
+    max-width: 970px;
     border-image-source: url('../img/ui/logs/logbase.png');
-    border-image-slice: 146 47 10 50 fill;
-    border-image-width: 146px 47px 10px 50px;
+    border-image-slice: 146 47 137 50 fill;
+    border-image-width: 146px 47px 137px 50px;
     border-image-outset: 0px 0px 0px 0px;
     border-image-repeat: repeat stretch;
     border-style: solid;

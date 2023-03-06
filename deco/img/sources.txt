@@ -2,3 +2,4 @@ desktop/jazzmanIcon  		https://starbounder.org/Saxophone
 desktop/lth			https://www.imdb.com/title/tt0338348/mediaviewer/rm3331165184/
 desktop/moon			https://en.wikipedia.org/wiki/Moon
 background/moonsideFull		https://www.spriters-resource.com/snes/earthbound/sheet/3160/
+img/ui/logs/logbase system shock 2

@@ -1,7 +1,7 @@
 body {
     background: #000 url('../img/background/bg1.gif');
-    margin: 0;
-    overflow: hidden;
+    margin: auto;
+    overflow-y: auto;
 }
 
 html {
