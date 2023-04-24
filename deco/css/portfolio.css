@@ -1,0 +1,22 @@
+.game-thumb{
+    float: right;
+    width: 50%;
+}
+
+.game-thumb > *{
+    max-width: 100%;
+    border: solid 1px #00FFBD;
+}
+
+.game-description{
+    float: left; width: 49%;
+    padding-right: 1%;
+}
+
+.quote{
+    color:#ccc;
+}
+
+.curly-underline {
+    background: url(../img/ui/underline.gif) bottom repeat-x;
+}
