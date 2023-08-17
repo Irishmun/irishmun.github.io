@@ -1,20 +1,26 @@
-.game-thumb{
+.thumbnail {
     float: right;
     width: 50%;
 }
 
-.game-thumb > *{
+.thumbnail>* {
     max-width: 100%;
     border: solid 1px #00FFBD;
 }
 
-.game-description{
-    float: left; width: 49%;
+.description {
+    float: left;
+    width: 49%;
     padding-right: 1%;
+    /*text-align: start;*/
 }
 
-.quote{
-    color:#ccc;
+.unavailable {
+    cursor: not-allowed;
+}
+
+.quote {
+    color: #ccc;
 }
 
 .curly-underline {
