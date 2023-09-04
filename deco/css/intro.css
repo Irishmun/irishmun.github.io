@@ -3,6 +3,17 @@ h1.top {
     transform: translateX(-50%);
 }
 
+h1.forcetop {
+    display: block;
+    text-align: center;
+    white-space: pre-wrap;
+    right: 0;
+    top: 0;
+    left: 0;
+    position: absolute;    
+    margin-left: auto;
+}
+
 .intro {
     display: block;
     text-align: justify;
@@ -14,9 +25,14 @@ h1.top {
     transition: 0.5s ease-in-out;
 }
 
-#Main {
+.main-intro {
     opacity: 0;
     transition: 0.5s;
+    color: white;
+    margin-top: 60px;
+}
+
+.main-non-intro{
     color: white;
     margin-top: 60px;
 }

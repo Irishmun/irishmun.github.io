@@ -16,7 +16,7 @@
     color: #00FFBD;
 }
 
-.log-device *{
+.log-device * {
     color: #00FFBD;
 }
 
@@ -42,4 +42,10 @@
 .btn {
     float: left;
     padding-right: 8px;
+}
+
+.log-table-description {
+    display: block;
+    font-size: small;
+    color: #04CC93;
 }

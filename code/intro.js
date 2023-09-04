@@ -1,4 +1,5 @@
 let header = document.getElementById("Intro");
+let main = document.getElementById("Main");
 let animation = [
     { t: "_", ms: 250 },
     { t: "&nbsp&nbsp", ms: 250 },
@@ -20,24 +21,34 @@ let animation = [
     { t: "STEEF", ms: 50 },
 ];
 
-let stepDenominator = 1;
-if (window.localStorage.stepDenominator) {
-    stepDenominator = window.localStorage.stepDenominator;
+let introplayed = false;
+if (window.sessionStorage.introplayed) {
+    introplayed = window.sessionStorage.introplayed;
 }
 let i = 0;
 let update = () => {
-    let step = animation[i];
-    header.innerHTML = step.t;
-    i++;
-    if (i < animation.length) {
-        setTimeout(update, step.ms / stepDenominator)
-    } else {
-        header.classList.add('top');
-        setTimeout(() => {
-            document.getElementById("Main").style.opacity = 1;
-            //any extra code here
-        }, 500);
-        window.localStorage.stepDenominator = 1;
+    if (introplayed == false) {
+        let step = animation[i];
+        header.innerHTML = step.t;
+        i++;
+        if (i < animation.length) {
+            setTimeout(update, step.ms)
+        } else {
+            header.classList.add('top');
+            setTimeout(() => {
+                document.getElementById("Main").style.opacity = 1;
+                //any extra code here
+            }, 500);
+            window.sessionStorage.introplayed = true;
+        }
+    }
+    else
+    {
+        main.classList.remove('main-intro')
+        main.classList.add('main-non-intro')
+        header.classList.remove('intro');
+        header.classList.add('forcetop');
+        document.getElementById("Main").style.opacity = 1;
     }
 }
 update();
