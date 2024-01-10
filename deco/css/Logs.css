@@ -49,3 +49,8 @@
     font-size: small;
     color: #04CC93;
 }
+
+.log-margins{
+    margin-left: 4px;
+    margin-right: 5px;
+}

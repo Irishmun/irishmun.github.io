@@ -5,8 +5,9 @@ let currentAge = new Date(today - birth);
 let AgeElement = document.getElementById('Age');
 
 function SetAge() {
+    today = Date.now();
     AgeElement.innerText = Math.abs(currentAge.getUTCFullYear() - epochYear);
-    setTimeout(SetAge, 60000);
+    setTimeout(SetAge, 30000);
 }
 
 SetAge();
