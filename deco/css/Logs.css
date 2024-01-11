@@ -1,7 +1,7 @@
 .log-device {
     margin: 0 auto 50px;
     width: min-content;
-    min-width: 134px;
+    min-width: 350px;/*134px;*/
     min-height: 270px;
     max-width: 970px;
     border-image-source: url('../img/ui/logs/logbase.png');
