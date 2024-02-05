@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>title - MilkmanMcGee</title>
+    <base href="/">
+    <link rel="alternate" hreflang="en">
+    <!--css-->
+    <link rel="stylesheet" href="deco/css/font.css">
+    <link rel="stylesheet" href="deco/css/global.css">
+    <link rel="stylesheet" href="deco/css/Logs.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="deco/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="deco/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="deco/icon/favicon-16x16.png">
+    <link rel="manifest" href="deco/icon/site.webmanifest">
+    <link rel="mask-icon" href="deco/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="deco/icon/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Portfolio">
+    <meta name="application-name" content="Portfolio">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="deco/icon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!--End Favicon-->
+</head>
+
+<body>
+    <div class="nav">
+        <!--Nav stuff here-->
+        <a href="index.htm">Home</a>
+        /
+        <a href="notes.htm">Notes</a>
+        /
+        <a href="about.htm">About</a>
+        /
+        <a href="portfolio.htm">Portfolio</a>
+    </div>
+    <div class="main">
+        <div class="log-device" style="width:660px;">
+            <p>
+                <i>Note: Currently, the repository is private per Sorama's request, <a
+                        href="https://github.com/Irishmun/SoramaVR">this link</a> will redirect you to the Git page if
+                    it is no longer private</i>
+            </p>
+            <hr>
+            <div class="centered">
+                <img src="portfolio/games/sorama/luxcore_out_3.jpg" style="width: 100%;">
+            </div>
+            <p>
+                For my graduation internship, I worked at Sorama B.V., who specializes in audio visualization hardware.
+                For their then newest product, the <a href="https://sorama.eu/products/sorama-cam-iv64">CAM iV64</a>,
+                the wanted a
+                demo to let potential buyers get to know the product within VR. The demo had been worked on by prior
+                interns, but did not reach the point where it demonstrated the product’s capabilities well enough.
+            </p>
+            <div class="centered">
+                <video width="640" height="360" controls>
+                    <source src="portfolio/games/sorama/sorama-demo-old.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="margin-top: -3px;">The project at the start of the internship</p>
+            </div>
+            <p>
+            <H2>The task</H2>
+            My task was to make the demo as good as possible, adding the missing functionalities, improving the visuals
+            and performance. As most of the people at Sorama had little-to-no experience with Unity, I had to ensure
+            that the project was as easily expandable as possible and that the documentation was clear on how everything
+            works and could be used.
+            </p>
+            <p>
+            <H2>The works</H2>
+            A basic summary:
+            I had developed the missing functionalities:
+            <ul>
+                <li> Sampling audio</li>
+                <li> Visual frequency graph </li>
+                <li> Selecting a frequency range</li>
+                <li> Visualizing audio through Blobs on the screen</li>
+            </ul>
+            <p>
+                I started out with sampling the audio outside of Unity, this way I could figure out how to do it without
+                having to worry about which Unity components to use.
+            </p>
+            <div class="centered">
+                <img src="portfolio/games/sorama/audiosampling.gif" style="height: 315px;">
+                <p style="margin-top: -3px;">External sampling program, using <a
+                        href="https://scottplot.net/">ScottPlot</a></p>
+            </div>
+            <p>
+                Once the functionality was there, I ported it over to Unity, using “baked” audio sample files to handle
+                multiple audio files at once without a major hit to performance. I had tried several options to render
+                the graph, but in the end used <a href="https://docs.unity3d.com/Manual/class-LineRenderer.html">the
+                    Linerenderer</a>
+                as it was the best from what I had tried and had available.
+            </p>
+            <p>
+                Selecting the frequency range was done using sliders, and made use of the <a
+                    href="https://learn.microsoft.com/en-us/dotnet/api/system.span-1?view=net-5.0">Span struct</a> to
+                get the content
+                from the array directly.
+            </p>
+            <p>
+                The blobs were visualized through a heat map shader that got the screen points with their strengths
+                passed
+                through as an array of data.
+                As the screen only needed a framerate of 24fps to match it’s real world counterpart, the system could
+                use
+                that lower framerate to send the data to the GPU without having to worry about it being noticeably
+                delayed, as the game would run at 90fps.
+            </p>
+
+            </p>
+            <H2>The Result</H2>
+            <p>
+            </p>
+            <p>
+                At the end of the internship, I held a presentation at the company showing the result of my work. The
+                employees were very happy with the results and found it incredible that everything performed smoothly in
+                VR with.
+            </p>
+            <div class="centered">
+                <img src="portfolio/games/sorama/fps_diff.png">
+                <p style="margin-top: -3px;">Difference in framerate between the project at the start and end of the internship</a></p>
+            </div>
+            <div class="centered">
+                <video width="640" height="360" controls>
+                    <source src="portfolio/games/sorama/sorama-demo.webm" type="video/webm">
+                    Your browser does not support the video tag.
+                </video>
+                <p style="margin-top: -3px;">The final result</p>
+            </div>
+            <p>
+                <i>“I’ve never seen such in-depth documentation, you can really see the passion that he put it into
+                    it.”</i><br>
+                - Job, my internship guide
+            </p>
+
+            </p>
+        </div>
+    </div>
+    <!--Scripts-->
+</body>
+
+</html>
