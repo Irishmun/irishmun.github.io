@@ -34,6 +34,7 @@ button {
     font-size: smaller;
     text-align: center;
     margin: 8px auto 50px auto;
+    min-width: 200px;
     max-width: 1024px;
     padding-bottom: 3px;
 }
@@ -42,8 +43,8 @@ button {
 }
 
 .mobile-zoom{
+    width:fit-content;
     zoom: 2;
     -moz-transform: scale(2);
     -moz-transform-origin: 0 0;
-
 }
