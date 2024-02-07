@@ -40,3 +40,10 @@ button {
 .nav>*{
     color:#00FFBD;
 }
+
+.mobile-zoom{
+    zoom: 2;
+    -moz-transform: scale(2);
+    -moz-transform-origin: 0 0;
+
+}

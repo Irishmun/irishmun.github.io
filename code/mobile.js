@@ -6,6 +6,8 @@ function isMobile() {
 
   if (isMobile()) {
     console.log("Mobile device detected");
+    let bod = document.body;
+    bod.classList.add("mobile-zoom");
   } else {
     console.log("Desktop device detected");
   }

@@ -1,6 +1,8 @@
 .thumbnail {
-    float: right;
     width: 50%;
+    float: right;
+    margin-left: 1vmin;
+    margin-bottom: 1vmin;
 }
 
 .thumbnail>* {
@@ -8,12 +10,6 @@
     border: solid 1px #00FFBD;
 }
 
-.description {
-    float: left;
-    width: 49%;
-    padding-right: 1%;
-    /*text-align: start;*/
-}
 
 .unavailable {
     cursor: not-allowed;
@@ -25,4 +21,8 @@
 
 .curly-underline {
     background: url(../img/ui/underline.gif) bottom repeat-x;
+}
+
+table{
+    text-align: start !important;
 }
