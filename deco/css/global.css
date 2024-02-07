@@ -31,7 +31,7 @@ button {
 
 .nav{
     border: solid 1px #00FFBD;
-    font-size: smaller;
+    /*font-size: 80%;*/
     text-align: center;
     margin: 8px auto 50px auto;
     min-width: 200px;
