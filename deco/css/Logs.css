@@ -1,7 +1,7 @@
 .log-device {
-    margin: 0 auto 50px;
+    /*margin: 0 auto 50px;
     width: min-content;
-    min-width: 350px;/*134px;*/
+    min-width: 350px;
     min-height: 270px;
     max-width: 970px;
     border-image-source: url('../img/ui/logs/logbase.png');
@@ -10,7 +10,7 @@
     border-image-outset: 0px 0px 0px 0px;
     border-image-repeat: repeat stretch;
     border-style: solid;
-    padding: 11px 35px 9px 13px;
+    padding: 11px 35px 9px 13px;*/
     overflow-wrap: break-word;
     text-align: justify;
     color: #00FFBD;

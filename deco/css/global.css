@@ -1,3 +1,7 @@
+* {
+    scrollbar-color: #00FFBD #000;
+}
+
 body {
     background: #000 url('../img/background/bg1.gif');
     margin: auto;
