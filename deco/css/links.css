@@ -24,3 +24,6 @@
     display: inline-block;
     text-decoration: none;
 }
+.link-small{
+    font-size:small;
+}
