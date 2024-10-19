@@ -46,9 +46,6 @@ button {
     color:#00FFBD;
 }
 
-.mobile-zoom{
-    width:fit-content;
-    zoom: 2;
-    -moz-transform: scale(2);
-    -moz-transform-origin: 0 0;
+.quote {
+    color: #DDFFFF !important;
 }

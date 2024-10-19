@@ -15,10 +15,6 @@
     cursor: not-allowed;
 }
 
-.quote {
-    color: #DDFFFF;
-}
-
 .curly-underline {
     background: url(../img/ui/underline.gif) bottom repeat-x;
 }
