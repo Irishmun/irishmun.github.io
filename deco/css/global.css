@@ -34,7 +34,6 @@ button {
 }
 
 .nav{
-    border: solid 1px #00FFBD;
     /*font-size: 80%;*/
     text-align: center;
     margin: 8px auto 50px auto;
@@ -48,13 +47,14 @@ button {
     color:#00FFBD;
 }
 
-.navbar{
+.navbar{    
+    border: solid 1px #00FFBD;
     display:block; 
     width: 100%; 
     height:22px; 
     min-width: 200px; 
     max-width: 1024px;
-    margin: 8px auto 50px auto; 
+    margin: 8px auto 50px auto;
 }
 
 .quote {
