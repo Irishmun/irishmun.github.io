@@ -34,26 +34,18 @@ button {
 }
 
 .nav{
-    /*font-size: 80%;*/
+    border: solid 1px #00FFBD;
+    width: 99%;
     text-align: center;
     margin: 8px auto 50px auto;
     min-width: 200px;
     max-width: 1024px;
+    padding-bottom: 3px;
     background-color: #000;
 }
 
 .nav>*{
     color:#00FFBD;
-}
-
-.navbar{    
-    border: solid 1px #00FFBD;
-    display:block; 
-    width: 99%; 
-    height:22px; 
-    min-width: 200px; 
-    max-width: 1024px;
-    margin: 8px auto 50px auto;
 }
 
 .quote {

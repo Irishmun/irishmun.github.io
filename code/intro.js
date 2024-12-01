@@ -25,7 +25,21 @@ let introplayed = false;
 if (window.sessionStorage.introplayed) {
     introplayed = window.sessionStorage.introplayed;
 }
-let i = 0;
+else if (window.history.length > 1 && document.referrer.indexOf(window.location.host) > 0){
+    window.sessionStorage.introplayed = true;
+    introplayed = true;
+}
+
+if  (introplayed == false)
+{
+    main.classList.remove('main-non-intro')
+    main.classList.add('main-intro')
+    header.classList.add('intro');
+    header.classList.remove('forcetop');
+    document.getElementById("Main").style.opacity = 0;
+}
+
+    let i = 0;
 let update = () => {
     if (introplayed == false) {
         let step = animation[i];
@@ -42,8 +56,7 @@ let update = () => {
             window.sessionStorage.introplayed = true;
         }
     }
-    else
-    {
+    else {
         main.classList.remove('main-intro')
         main.classList.add('main-non-intro')
         header.classList.remove('intro');
