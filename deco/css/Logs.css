@@ -20,7 +20,7 @@
     color: #00FFBD;
 }
 
-.log-device hr {
+hr {
     border-color: #00FFBD;
     margin-left: 5px;
     margin-right: 5px;
@@ -50,7 +50,39 @@
     color: #04CC93;
 }
 
-.log-margins{
+.log-margins {
     margin-left: 4px;
     margin-right: 5px;
+}
+
+a {
+    color: #00FFBD
+}
+
+.notes-list>li {
+    list-style: url(../img/icons/note16.gif);
+}
+
+.create-date {
+    color: #DDFFFF !important;
+    font-size: small;
+    font-style: italic;
+}
+
+.image {
+    border: solid 1px #00FFBD50;
+}
+
+aside {
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px #00FFBD;
+    font-style: italic;
+    background-color: #00FFBD25;
+}
+
+aside>p {
+    margin: 0.5rem;
 }

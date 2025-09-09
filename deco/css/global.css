@@ -1,5 +1,8 @@
 * {
     scrollbar-color: #00FFBD #000;
+    font-family: Eurostile, monospace;
+    font-variant-numeric: tabular-nums;
+    color: #eee;
 }
 
 body {
@@ -12,28 +15,31 @@ html {
     cursor: url(../img/ui/cursor/NORMAL.png)0 0, auto;
 }
 
-* {
-    font-family: Eurostile, monospace;
-    font-variant-numeric: tabular-nums;
-    color: white;
-}
-
 button {
     background-color: transparent;
     border: solid 1px #fff;
 }
 
 .main {
+    padding: 0 1em 1em 1em;
     margin: 0 auto;
     max-width: 1024px;
 }
 
-.centered{
+main {
+    padding: 0 1em 1em 1em;
+    margin: 0 auto;
+    max-width: 1024px;
+}
+
+.centered {
     text-align: center;
     align-content: center;
 }
 
-.nav{
+nav {
+    /* position:sticky;
+    top:0; */
     border: solid 1px #00FFBD;
     width: 99%;
     text-align: center;
@@ -44,17 +50,51 @@ button {
     background-color: #000;
 }
 
-.nav>*{
-    color:#00FFBD;
+.nav {
+    border: solid 1px #00FFBD;
+    width: 99%;
+    text-align: center;
+    margin: 8px auto 50px auto;
+    min-width: 200px;
+    max-width: 1024px;
+    padding-bottom: 3px;
+    background-color: #000;
 }
 
-.quote {
+.nav>* {
+    color: #00FFBD;
+}
+
+q {
+    font-style: italic;
     color: #DDFFFF !important;
 }
 
-.mobile-zoom{
-    width:fit-content;
-    zoom: 2;
-    -moz-transform: scale(2);
-    -moz-transform-origin: 0 0;
+.engine {
+    color: #DDFFFF !important;
+    font-weight: bold;
+    font-size: smaller;
+}
+
+
+a {
+    color: #eee;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #000;
+    font-size: 0.8em;
+    border-radius: .2em;
+    padding: 0.1em .2em;
+    border: 1px solid #eeeeee50;
+}
+
+.code-block {
+    border-radius: 0;
+    border: 2px inset #00FFBD;
+    padding: 1vh 0.5em;
+    color: #00FFBD;
+    display: block;
+    overflow-x: auto;
 }

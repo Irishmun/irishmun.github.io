@@ -1,0 +1,7 @@
+a{
+    color:#00FFBD
+}
+
+.notes-list > li{
+list-style: url(../img/icons/note16.gif);
+}
