@@ -4,40 +4,43 @@
 <head>
     <title>Mantling in games - notes</title>
     <link rel="alternate" hreflang="en">
+    <base href="../">
+    <!--preload-->
+    <link rel="preload" href="./deco/css/global.css" as="style">
     <!--css-->
-    <link rel="stylesheet" href="../deco/css/font.css">
-    <link rel="stylesheet" href="../deco/css/global.css">
-    <link rel="stylesheet" href="../deco/css/Logs.css">
+    <link rel="stylesheet" href="./deco/css/font.css">
+    <link rel="stylesheet" href="./deco/css/global.css">
+    <link rel="stylesheet" href="./deco/css/Logs.css">
     <!--Favicon-->
-    <link rel="apple-touch-icon" sizes="180x180" href="../deco/icon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../deco/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../deco/icon/favicon-16x16.png">
-    <link rel="manifest" href="../deco/icon/site.webmanifest">
-    <link rel="mask-icon" href="../deco/icon/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="../deco/icon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="./deco/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./deco/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./deco/icon/favicon-16x16.png">
+    <link rel="manifest" href="./deco/icon/site.webmanifest">
+    <link rel="mask-icon" href="./deco/icon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="./deco/icon/favicon.ico">
     <meta name="apple-mobile-web-app-title" content="Portfolio">
     <meta name="application-name" content="Portfolio">
     <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="msapplication-config" content="../deco/icon/browserconfig.xml">
+    <meta name="msapplication-config" content="./deco/icon/browserconfig.xml">
     <meta name="theme-color" content="#000">
     <!--End Favicon-->
-    <!--Discord embed-->
+    <!--Embed-->
     <meta content="Recreating quake movement" property="og:description" />
     <meta content="https://irishmun.github.io/notes/godot-quakemovement.htm" property="og:url" />
     <meta content="./notes/godot-quakemovement/example.gif" property="og:image" />
     <meta content="#00FFBD" data-react-helmet="true" name="theme-color" />
-    <!--End Discord embed-->
+    <!--End Embed-->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 </head>
 
 <body>
     <nav>
         <!--Nav stuff here-->
-        <a href="../index.htm">Home</a> /
-        <a href="../notes.htm">Notes</a> /
-        <a href="../about.htm">About</a> /
-        <a href="../portfolio.htm">Portfolio</a> /
-        <a href="../links.htm">Links</a>
+        <a href="./index.htm">Home</a> /
+        <a href="./notes.htm">Notes</a> /
+        <a href="./about.htm">About</a> /
+        <a href="./portfolio.htm">Portfolio</a> /
+        <a href="./links.htm">Links</a>
     </nav>
     <main>
         <h1 class="centered">Recreating Quake / GoldSrc movement in Godot</h1>
@@ -73,7 +76,7 @@
             Node3D called “Head” which holds our camera.
         </p>
         <div class="centered">
-            <img src="./godot-quakemovement/qm-player-structure.jpg" class="image">
+            <img src="./notes/godot-quakemovement/qm-player-structure.jpg" class="image">
         </div>
         <p>
             The CollisionShape3D is a CylinderShape with a height of 1.4m and radius of 0.5m. This is a rough
