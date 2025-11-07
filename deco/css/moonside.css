@@ -18,4 +18,72 @@ body>* {
     width: 92px;
     image-rendering: pixelated;
     position: fixed;
+    transform: scale(2);
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    -o-transform: scale(2);
+    bottom: 32px;
+    left: 64px;
+}
+
+
+.PlayPause {
+    background-image: url(../img/icons/Ambience/MoonPlayPause.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    image-rendering: pixelated;
+    max-height: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    min-width: 16px;
+    border: none;
+    outline: none;
+    position: relative;
+    top: 6px;
+    padding: 0;
+    margin: 0;
+}
+
+.PP-Play {
+    background-position-x: 0px;
+    left: 50px;
+}
+
+.PP-Play:active {
+    background-position-x: -16px;
+}
+
+.PP-Playing {
+    background-position-x: -16px;
+    left: 50px;
+}
+
+.PP-Pause {
+    background-position-x: -32px;
+    left: 46px;
+}
+
+.PP-Pause:active {
+    background-position-x: -48px;
+}
+
+.PP-Paused {
+    background-position-x: -48px;
+    left: 46px;
+}
+
+.PP-Stop {
+    background-position-x: -64px;
+    left: 46px;
+}
+
+.PP-Stop:active {
+    background-position-x: -80px;
+    left: 46px;
+}
+
+.PP-Stopped {
+    background-position-x: -80px;
+    left: 46px;
 }
