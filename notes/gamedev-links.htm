@@ -44,7 +44,7 @@
     <div class="main">
         <h1 class="centered">Game dev Links</h1>
         <div class="centered create-date">Created November 09, 2025</div>
-        <!--<div class="centered create-date">Last Updated November 11, 2025</div>-->
+        <div class="centered create-date">Last Updated November 13, 2025</div>
         <p>
             Throughout the years, I’ve come across a large variety of websites that in one way or another have been
             quite the benefit to my creative efforts.
@@ -335,10 +335,56 @@
         <span>I found this site once when I was trying to make a tool to create ascii art from text.
             It didn't go anywhere, but this site was still a very neat example of ascii gradients.</span>
         </p>
+        <p>
+        <h3><a href="https://www.youtube.com/watch?v=I-MPiZ7lvcE">- Foyezes: making a LUT</a></h3>
+        <span>A neat trick on making a custom color LUT (Look Up Table) without having to use much guesswork.<br>
+            <p>
+            <details>
+                <summary>The video bowls down to the following (click to expand)</summary>
+                <ul>
+                    <li>Take screenshot of the game environment.</li>
+                    <li>Open the screenshot in image editor alongside base LUT image.</li>
+                    <li>Edit image visuals to liking and export now changed LUT.</li>
+                    <li>Export changed LUT.</li>
+                    <li>Import it as a 3d texture to use as the color correction.</li>
+                </ul>
+            </details>
+        </p>
+            If the link in the video has expired, you can download the base LUT <a href="./gamedev-links/rgbtable16x1.png"
+                target=”_blank”>here</a>.
+        </span>
+        <!--<details>
+            <summary>The video bowls down to the following (detailed explanation)</summary>
+            <ul>
+                <li>Set Tonemapping to either ACES or AgX</li>
+                <li>Take screenshot of the game environment.</li>
+                <li>
+                    Open the screenshot in image editor with base LUT image.
+                    <ul>
+                        <li>Alternatively, Open it in a video editor like Davinci Resolve</li>
+                        <li>Import the screenshot and LUT image and drag these onto the timeline</li>
+                    </ul>
+                </li>
+                <li>
+                    Edit image visuals to liking
+                    <ul>
+                        <li>if in Davinci, go to the color tab</li>
+                        <li>click <code>Alt+S</code>, change the colors on the newly created node</li>
+                        <li>Once changed to liking, copy the node and paste it on the LUT image in the timeline</li>
+                    </ul>
+                </li>
+                <li>
+                    Export changed LUT as a 16-bit png.
+                    <ul>
+                        <li>In Davinci, render it as a single frame png on the LUT texture</li>
+                    </ul>
+                </li>
+                <li>Import it as a 3d texture to use as the color correction.</li>
+                <li>Set the texture3d import to: lossless compression, 16 horizontal, 1 vertical</li>
+            </ul>
+        </details>-->
+        </p>
     </div>
-    <!--Scripts-->
-    <!--<script src="./code/clock.js"></script>-->
-    <!--<script src="./code/mobile.js"></script>-->
 </body>
 
 </html>
